@@ -1,8 +1,10 @@
 # basic-playbook
 
 > This file will document my progression through the Cloud Academy 'Getting Started with Ansible' Lab but within my own local environments.<br/>
-> The objective is to further push my practice into more realistic settings that may be more like the working environments that I am applying for.
+> The objective is to further push my practice into more realistic settings that may be more like the working environments that I am applying for.<br/>
 
+> This playbook uses ansible to configure and set up an apache2 webserver on the local host.
+ 
 ## Amazon Web Services 
 - Making an IAM user account with the correct permissions 
 - Creating ec2 instance and updating security group to allow ssh access ( this tripped me up yesterday)
