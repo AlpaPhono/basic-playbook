@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: false
+  connection: local
+  become: yes
+
+  tasks:
+    name: Install Our Packages
+    apt:
+      name: ['apache2']
+
