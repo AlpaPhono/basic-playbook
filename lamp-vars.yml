@@ -1,5 +1,5 @@
 ---
-- host: localhost
+- hosts: localhost
   gather_facts: false
   connection: local
   become: yes
@@ -25,3 +25,9 @@
         name: "{{ item }}"
         state: started
       with_items: "{{ services }}"
+
+    - name: Enable Apache2 momdssl
+      shell: a2enmod ssl
+    - name: Enable Apache3 Default HTTPS site
+      shell: a2ensite default-ssl
+
